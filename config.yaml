@@ -1,0 +1,7 @@
+telegram_token: "YOUR-TELEGRAM-TOKEN"
+telegram_admin: 123456789        # your chat_id
+default_amounts:
+  ethereum: 0.01
+  bsc: 0.05
+  polygon: 10
+use_testnets: true               # so you don’t burn real funds
