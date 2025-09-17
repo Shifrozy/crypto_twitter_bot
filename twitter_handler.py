@@ -1,5 +1,5 @@
 import snscrape_patch
-snscrape_patch.patch_snscrape_import()
+snscrape = snscrape_patch.patch_snscrape_import()
 
 import snscrape.modules.twitter as sntwitter
 
