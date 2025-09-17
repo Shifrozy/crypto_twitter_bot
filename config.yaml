@@ -1,5 +1,5 @@
-telegram_token: "YOUR-TELEGRAM-TOKEN"
-telegram_admin: 123456789        # your chat_id
+telegram_token: 8478318624:AAGeWFZTxImMoPd0Qdpy05o43G3LYC1IU_Y
+telegram_admin: 6307752519        # your chat_id
 default_amounts:
   ethereum: 0.01
   bsc: 0.05
