@@ -1,12 +1,8 @@
-import snscrape_patch
-snscrape = snscrape_patch.patch_snscrape_import()
-
-import snscrape.modules.twitter as sntwitter
+# twitter_handler.py
+import tweepy
 
 def get_latest_tweets(username, limit=5):
-    tweets = []
-    for i, tweet in enumerate(sntwitter.TwitterUserScraper(username).get_items()):
-        if i >= limit:
-            break
-        tweets.append(tweet.content)
-    return tweets
+    client = tweepy.Client(bearer_token="YOUR_TWITTER_BEARER_TOKEN")
+    user = client.get_user(username=username)
+    tweets = client.get_users_tweets(user.data.id, max_results=limit)
+    return [t.text for t in tweets.data]
