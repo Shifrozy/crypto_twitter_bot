@@ -17,7 +17,9 @@ def process_tweet(tweet, default_amounts):
                 send_transaction(chain, word, amount)
 
 if __name__ == "__main__":
-    username = "binance"  # Example
+    # Ask the user for a Twitter handle instead of hardcoding
+    username = input("Enter Twitter username (without @): ").strip()
+
     tweets = get_latest_tweets(username, limit=3)
     mock_defaults = {"ethereum":0.01, "bsc":0.05, "polygon":0.1}
     
