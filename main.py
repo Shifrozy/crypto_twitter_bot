@@ -21,7 +21,7 @@ if __name__ == "__main__":
     username = input("Enter Twitter username (without @): ").strip()
     print("Monitoring tweets from:", username)
 
-    tweets = get_latest_tweets(username, limit=3)
+    tweets = get_latest_tweets(username, limit=10)
     mock_defaults = {"ethereum":0.01, "bsc":0.05, "polygon":0.1}
     
     for t in tweets:
