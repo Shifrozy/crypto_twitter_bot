@@ -19,6 +19,7 @@ def process_tweet(tweet, default_amounts):
 if __name__ == "__main__":
     # Ask the user for a Twitter handle instead of hardcoding
     username = input("Enter Twitter username (without @): ").strip()
+    print("Monitoring tweets from:", username)
 
     tweets = get_latest_tweets(username, limit=3)
     mock_defaults = {"ethereum":0.01, "bsc":0.05, "polygon":0.1}
